@@ -307,3 +307,13 @@ CREATE TABLE `sys_user_role` (
 -- ----------------------------
 -- Records of sys_user_role
 -- ----------------------------
+
+DROP TABLE IF EXISTS `article_class`;
+CREATE TABLE article_class
+(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  class_name VARCHAR(32) COMMENT '类别名称',
+  createTime DATE COMMENT '创建时间',
+  updateTime DATE COMMENT '更新时间',
+  createUser INT COMMENT '创建人'
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章类型';
