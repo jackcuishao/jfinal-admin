@@ -1,10 +1,12 @@
 package com.supyuan.school.article;
 
+import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Page;
 import com.supyuan.component.base.BaseProjectController;
 import com.supyuan.jfinal.component.annotation.ControllerBind;
 import com.supyuan.jfinal.component.db.SQLUtils;
 import com.supyuan.system.department.SysDepartment;
+import com.supyuan.system.role.SysRole;
 import com.supyuan.util.StrUtils;
 
 import java.util.List;
@@ -48,5 +50,51 @@ public class ArticleClassController extends BaseProjectController {
 
 
         render(path + "list.html");
+    }
+    public void add() {
+        render(path + "add.html");
+    }
+
+
+    public void edit() {
+        ArticleClass model = ArticleClass.dao.findById(getParaToInt());
+        setAttr("model", model);
+        render(path + "edit.html");
+    }
+
+    public void delete() {
+        Integer id = getParaToInt();
+        // 日志添加
+        ArticleClass model = new ArticleClass();
+        Integer userid = getSessionUser().getUserID();
+        String now = getNow();
+        model.put("update_id", userid);
+        model.put("update_time", now);
+
+        // 删除授权
+        Db.update("delete from article_class where id = ? ", id);
+
+        model.deleteById(id);
+
+        list();
+    }
+
+    public void save() {
+        Integer pid = getParaToInt();
+        ArticleClass model = getModel(ArticleClass.class);
+        // 日志添加
+        Integer userid = getSessionUser().getUserID();
+        String now = getNow();
+        model.put("update_id", userid);
+        model.put("update_time", now);
+        if (pid != null && pid > 0) { // 更新
+            model.update();
+        } else { // 新增
+            model.remove("id");
+            model.put("createUser", userid);
+            model.put("createTime", now);
+            model.save();
+        }
+        renderMessage("保存成功");
     }
 }

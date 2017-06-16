@@ -317,3 +317,20 @@ CREATE TABLE article_class
   updateTime DATE COMMENT '更新时间',
   createUser INT COMMENT '创建人'
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章类型';
+
+
+
+DROP TABLE IF EXISTS `article`;
+CREATE TABLE article
+(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  class_id INT COMMENT '类别id',
+  article_title VARCHAR(200) COMMENT '文章标题',
+  article_conten TEXT COMMENT '文章内容',
+  article_pic TEXT COMMENT '文章缩略图',
+  is_UP INT COMMENT '是否置顶',
+  cat_count LONG COMMENT '文章查看次数',
+  createTime DATE COMMENT '创建时间',
+  updateTime DATE COMMENT '更新时间',
+  createUser INT COMMENT '创建人'
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章';
