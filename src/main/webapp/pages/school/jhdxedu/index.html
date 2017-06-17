@@ -1,0 +1,867 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0022)http://www.jhdxedu.com/ -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <style type="text/css">
+        .div1 {
+            width: 100%;
+            height: 20px;
+        }
+
+        .div11 {
+            float: left;
+            width: 26.7777777%;
+            height: 40%;
+            margin-left: 5%;
+            border: 1px solid #eee;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+
+        .div12 {
+            border: 1px solid #eee;
+            margin-left: 5%;
+            margin-top: 5%;
+            float: left;
+            width: 26.7777777%;
+            height: 40%;
+        }
+        .div3 {
+            border: 1px solid #eee;
+            border-top: 2px solid #09918d;
+            height:442px;
+        }
+        .div4 {
+            width:30%;
+            height:20%;
+            border:1px solid #eee;
+            background-color:#ff0000;
+            margin-top:5%;
+            float:left;
+        }
+        .div41 {
+            margin-left:5%;
+        }
+     
+    </style>
+    <!--<script language="javascript" src="js/jquery-1.8.2.js"></script>-->
+    <script language="javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        //document.getElementsByName("div1").mouseover(function(){
+        //    document.getElementsByName("div1").css("background-color","#09918d");
+        //});
+        //document.getElementsByName("div1").mouseout(function(){
+        //    document.getElementsByName("div1").css("background-color","#eee");
+        //});
+        function f1(id)
+        {
+            $("#"+id).css("background","url(img/zsjzh.png)");
+            //document.getElementById(id).css("background","url(img/zsjzh.jpg)");
+        }
+        function f2(id)
+        {
+            $("#"+id).css("background","url(img/zsjz.png)");
+            //document.getElementById(id).css("background","url(img/zsjz.png)");
+        }
+        var n = 1;
+        var demo = document.getElementById("demo");
+        var demo1 = document.getElementById("demo1");
+        var demo2 = document.getElementById("demo2");
+        var bool = false;
+        $(document).ready(function () {
+            var marginTop = 0;
+            
+            setInterval(function () {
+                if (bool) return;//判断运行和停止
+                $(".text li:first").animate({ marginTop: marginTop-- }, 10, function () {
+                    if (!($(this).is(":animated"))) {    //判断是否有一个动画节点
+                        if ((-marginTop) >= $(this).height()) {  //判断移出位置是否超过高度
+                            $(this).css("margin", "0");
+                            $(this).appendTo($(".text"));  //把第一个节点移到ul后面
+                            marginTop = 0;      //重新设置移动数值
+                        }
+                    }
+                });
+            }, 100);
+           
+        });
+        function demoover()
+        {
+            bool = true;
+        }
+        function demoout()
+        {
+            bool = false;
+        }
+        
+    </script>
+</head>
+<body>
+    <!--<metaname ="renderer"="" content="webkit">-->
+
+
+    <title>江汉大学全日制助学班</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Announced by Visual SiteBuilder 9-->
+    <link rel="stylesheet" type="text/css" href="css/_sitegray_d.css" />
+    <script language="javascript" src="js/_sitegray.js.下载"></script>
+    <!-- CustomerNO:7765626265723230747f47565255544203030006 -->
+    <meta name="keywords" content="江汉大学全日制助学班">
+    <script type="text/javascript" src="js/counterjs.下载"></script>
+    <script type="text/javascript">_jsq_(1009,'/index.jsp',-1,1236753891)</script>
+    <nav class="navbar navbar-main" role="navigation">
+        <div class="container">
+            <!--#begineditable name="顶部logo" viewid="46676" tagname="顶部logo" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""-->            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="logo" href="index.html"><img src="img/logo.png" alt=""><span style="font-size: 16px;">全日制助学班</span> </a>
+            </div><!--#endeditable-->
+            <!--#begineditable name="网站导航" viewid="46668" tagname="网站导航" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""--><!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="visible-xs visible-sm">
+                    	<a href="index.html">
+                    		<span class="glyphicon glyphicon-home" ></span> 回到首页</a></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" role="button" aria-expanded="false" href="index.html">首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" role="button" aria-expanded="false" href="xxjj.html">学校简介</a>
+                        <!-- <ul class="dropdown-menu" role="menu">
+                          	<li><a href="xxgk.html">学校概况</a></li>
+                            <li><a href="jdbs.html">江大标识</a></li>
+                            <li><a href="xyfg.html">校园风光</a></li>
+                        </ul>-->
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" role="button" aria-expanded="false" href="zyjs.html">专业介绍</a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" role="button" aria-expanded="false" href="zszn.html">招生指南</a>
+                        <!--
+                        	ul class="dropdown-menu" role="menu">
+                            <li><a href="zsjz.html">招生简章</a></li>
+                            <li><a href="zszx.html">招生资讯</a></li>
+                            <li><a href="bklc.html">报考流程</a></li>
+                            <li><a href="zswd.html">招生问答</a></li>
+                    
+                        </ul>-->
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" role="button" aria-expanded="false" href="xwdt.html">新闻动态</a>
+                       <!--
+                       <ul class="dropdown-menu" role="menu">
+                            <li><a href="tzgg.html">通知公告</a></li>
+                            <li><a href="xydt.html">校园动态</a></li>
+                            <li><a href="ztzl.html">专题专栏</a></li>
+                        </ul>
+                       --> 
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" role="button" aria-expanded="false" href="zxbm/zxbm.html.html">在线报名</a>
+                        <!--
+                        	<ul class="dropdown-menu" role="menu">
+                            <li><a href="zxbm/zxbm.html.html">在线报名</a></li>
+                            <li><a href="lqcx.html">录取查询</a></li>
+                        </ul>
+                        -->
+                        
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" role="button" aria-expanded="false" href="lxwm.html">联系我们</a>
+                          <!--<ul class="dropdown-menu" role="menu">
+                            <li><a href="lxwm.html">联系我们</a></li>
+                            <li><a href="xyyl.html">校园一览</a></li>
+                            <li><a href="lxlx.html">来校路线</a></li>
+                        </ul>-->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse --><!--#endeditable-->
+        </div>
+    </nav>
+    <div class="container">
+        <div id="mycarousel" class="carousel slide myslide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators"><li class="active"></li><li></li><li></li><li></li></ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" style="width: 5900px;">
+                <div class="item" style="width: 1180px;">
+                    <img src="img/2016060702.jpg.png">
+                    <div class="carousel-caption">
+                        <a href="xxjj.html">校园风光</a>
+                    </div>
+                </div><div class="item" style="width: 1180px;">
+                    <img src="._files/2017060601.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <a href="javascript:void(0);">校园风光</a>
+                    </div>
+                </div><div class="item" style="width: 1180px;">
+                    <img src="_files/2017053002.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <a href="xxjj.html">校园风光</a>
+                    </div>
+                </div>
+                <div class="item" style="width: 1180px;">
+                    <img src="_files/123f.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <a href="xxjj.html">校园风光</a>
+                    </div>
+                </div><div class="item" style="width: 1180px;">
+                    <img src="_files/2016060702.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <a href="xxjj.html">校园风光</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="col-sm-12">
+                    <p class="page-header">
+                        江大动态 <small class="text-green text-uppercase">jd dynamic</small>
+                        <a href="xwdt.html" target="_blank" class="text-grey pull-right font14">
+                            <span class="icon icon-c"></span>更多
+                        </a>
+                    </p>
+                </div>
+               
+                <div class="col-sm-12 col-md-6">
+                    <div class="panel panel-success">
+                        <div class="panel-header img-ctrl">
+                            <a href="xwdt.html" target="_blank" title="教育学院走进扶贫对口村开展主题党日活动">
+                                <img src="img/E2DFF48A01863DFC771B5186DFA_0437F6E9_BEC4.png" class="img-width" alt="教育学院走进扶贫对口村开展主题党日活动">
+                            </a>
+                            <span style="display:none;"></__local/C/55/23/E2DFF48A01863DFC771B5186DFA_0437F6E9_BEC4.png</span>
+                        </div>
+                        <div class="panel-body" style="padding-bottom:8px;">
+                            <h5 class="media-heading text-nowrap">
+                                <a href="xwdt.html" target="_blank" title="教育学院走进扶贫对口村开展主题党日活动">教育学院走进扶贫对口村开展主题党日活动</a>
+                            </h5>
+                            <div class="text-grey f1">对口扶贫单位蔡甸区侏儒镇胜洪村开展“精准扶贫，爱心捐赠”主题党日活动。</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="panel panel-success ctrl-xs">
+                        <div class="panel-body">
+                            <ul class="list-unstyled list-news">
+                                <li>
+                                    <div class="media">
+                                        <a class="pull-left" href="xwdt.html" target="_blank" title="我校与市社会主义学院合作打造高校统战工作研究品牌">
+                                            <div class="imgCon"><img width="120" src="img/2646DF0682339BDC568C9CABBAB_7D5AF618_5BA84.jpg" alt=""></div>
+                                        </a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading text-nowrap"><a href="xwdt.html" target="_blank" title="我校与市社会主义学院合作打造高校统战工作研究品牌">我校与市社会主义学院合作打造高校统战工作研究品牌</a></h5>
+                                            <p class="text-grey">我校与市社会主义学院合作打造高校统战工作研究品牌</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <a class="pull-left" href="xwdt.html" target="_blank" title="我校“青马班”学员赴开发区开展“新青年下乡”活动。">
+                                            <div class="imgCon"><img width="120" src="img/2AB1DC77C7D113014799B718E25_F9F54701_15A3E.jpg" alt=""></div>
+                                        </a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading text-nowrap"><a href="xwdt.html" target="_blank" title="我校“青马班”围绕社区党建、社区治理、舆情引导、志愿服务和绿色生活倡导等五个方面开展工作。">我校“青马班”围绕社区党建、社区治理、舆情引导、志愿服务和绿色生活倡导等五个方面开展工作。</a></h5>
+                                            <p class="text-grey">我校“青马班”学员赴开发区开展“新青年下乡”活动。</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="media">
+                                        <a class="pull-left" href="xwdt.html" target="_blank" title="法学院第六届嘉仕奖学金评审活动成功举行 ">
+                                            <div class="imgCon"><img width="120" src="img/5D99451BB902D33EB45AE06B7EC_3EBF97A5_666C8.jpg" alt=""></div>
+                                        </a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading text-nowrap"><a href="xwdt.html" target="_blank" title="法学院第六届嘉仕奖学金评审活动成功举行 ">法学院第六届嘉仕奖学金评审活动成功举行 </a></h5>
+                                            <p class="text-grey">为鼓励法学专业学子不断提升专业素质，立足实践，规划职业未来和人生方向</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">
+                    <p class="page-header">
+                        招生简章 <small class="text-green text-uppercase">General rules</small>
+                        <a href="zszn.html" target="_blank" class="text-grey pull-right font14">
+                            <span class="icon icon-c"></span>更多
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-12">
+
+                    <div class="" style="border: 1px solid #eee;width: 100%;height: 342px;border-top: 2px solid #09918d;">
+                        <div id="div1" onmouseover="f1('div1')" onmouseout="f2('div1')" class="div11">
+
+                        </div>
+                        <div id="div2" onmouseover="f1('div2')" onmouseout="f2('div2')" class=" div11">
+
+                        </div>
+                        <div id="div3" onmouseover="f1('div3')" onmouseout="f2('div3')" class="div11">
+
+                        </div>
+                        <div id="div4" onmouseover="f1('div4')" onmouseout="f2('div4')" class="div12">
+
+                        </div>
+                        <div id="div5" onmouseover="f1('div5')" onmouseout="f2('div5')" class="div12">
+                        </div>
+                        <div id="div6" onmouseover="f1('div6')" onmouseout="f2('div6')" class="div12">
+
+                        </div>
+                    </div>
+                </div>
+             </div>
+                <script>_showDynClickBatch(['dynclicks_u6_7812', 'dynclicks_u6_7929', 'dynclicks_u6_7932', 'dynclicks_u6_7925', 'dynclicks_u6_7922', 'dynclicks_u6_7918', 'dynclicks_u6_7913'], [7812, 7929, 7932, 7925, 7922, 7918, 7913], "wbnews", 1236753891)</script>
+
+                <!--#endeditable-->
+            </div>
+        <div div class="row">
+            <div class="col-sm-8">
+                <div class="col-sm-12">
+                    <p class="page-header">
+                        专业介绍 <small class="text-green text-uppercase">Professional introduction</small>
+                        <a href="zyjs.html" target="_blank" class="text-grey pull-right font14">
+                            <span class="icon icon-c"></span>更多
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="panel">
+                        <div class="div3">
+                            <div class="div4">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">会计-注册设计师方向</a>
+                            </div>
+                            <div class="div4 div41">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">市场营销-电子商务</a>
+
+                            </div>
+                            <div class="div4 div41">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">行政管理学-人力资源</a>
+
+                            </div>
+                            <div class="div4">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">国际贸易-互联网+</a>
+                            </div>
+                            <div class="div4 div41">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">电子信息工程-智能技术与轨道交通</a>
+                            </div>
+                            <div class="div4 div41">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">汽车服务物工程-汽车技术服务与营销</a>
+
+                            </div>
+                            <div class="div4">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">企业财务管理-工程造价与管理</a>
+
+                            </div>
+                            <div class="div4 div41">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">工商企业管理-MBA高级管理</a>
+                            </div>
+                            <div class="div4 div41">
+                                <img src="img/201709012520.jpg" />
+                                <a href="zyjs.html" style="font-size: 16px;">金融-国际金融方向</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">
+                    <p class="page-header">
+                        通知公告 <small class="text-green text-uppercase">Notice</small>
+                        <a href="xwdt.html" target="_blank" class="text-grey pull-right font14">
+                            <span class="icon icon-c"></span>更多
+                        </a>
+                    </p>
+
+                </div>
+                <div class="col-sm-12 panel div3">
+                    <div id="demo" class="panel" style="overflow:hidden;" onmouseover="demoover()" onmouseout="demoout()">
+                        <div id="demo1" class="div3">
+                            <ul class="text">
+                                <li style="margin-top: 10px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                                <li style="margin-top: 20px;margin-left:-10px;"><a href="tzgg.html">我校代表队在全国大学生工程训练竞赛中取得优秀成绩</a></li>
+                            </ul>
+                        </div>
+                        <div id="demo2" style="display:none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--#begineditable name="招生动态" viewid="46672" tagname="招生动态" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""--><div class="col-sm-4">
+                <p class="page-header bb1">
+                    招生动态 <small class="text-green text-uppercase">news</small>
+                    <a href="zszn.html" target="_blank" class="pull-right text-grey font14"><span class="icon icon-more"></span> 更多</a>
+                </p>
+                <div class="panel">
+                    <div>
+                        <ul class="list-unstyled list">
+                            <li>
+                                <a href="xwdt.html" target="_blank" title="2017年江汉大学成人高等教育学历教…">2017年江汉大学成人高等教育学历教…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" target="_blank" title="2016年湖北成人高考录取分数线…">2016年湖北成人高考录取分数线…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" target="_blank" title="江汉大学2016年全日制自考特色班招…">江汉大学2016年全日制自考特色班招…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" target="_blank" title="江汉大学自考特色班专业介绍…">江汉大学自考特色班专业介绍…</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script>_showDynClickBatch(['dynclicks_u7_7931','dynclicks_u7_7934','dynclicks_u7_7926','dynclicks_u7_7923','dynclicks_u7_7887','dynclicks_u7_7886','dynclicks_u7_7914','dynclicks_u7_7915'],[7931,7934,7926,7923,7887,7886,7914,7915],"wbnews", 1236753891)</script>
+            <!--#endeditable-->
+            <!--#begineditable name="招生指南" viewid="46673" tagname="招生指南" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""-->
+            <div class="col-sm-4">
+                <p class="page-header bb1">
+                    招生指南 <small class="text-green text-uppercase">academic</small>
+                    <a href="zszn.html" target="_blank" class="pull-right text-grey font14"><span class="icon icon-more"></span> 更多</a>
+                </p>
+                <div class="panel">
+                    <div>
+                        <ul class="list-unstyled list">
+                            <li>
+                                <a href="xwdt.html" target="_blank" title="2017年江汉大学成人高等教育学历教…">2017年江汉大学成人高等教育学历教…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" target="_blank" title="2016年湖北成人高考录取分数线…">2016年湖北成人高考录取分数线…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" target="_blank" title="江汉大学2016年全日制自考特色班招…">江汉大学2016年全日制自考特色班招…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" target="_blank" title="江汉大学自考特色班专业介绍…">江汉大学自考特色班专业介绍…</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script>_showDynClickBatch(['dynclicks_u8_7930','dynclicks_u8_7927','dynclicks_u8_7920','dynclicks_u8_7919','dynclicks_u8_7912','dynclicks_u8_7909','dynclicks_u8_7933','dynclicks_u8_7890'],[7930,7927,7920,7919,7912,7909,7933,7890],"wbnews", 1236753891)</script>
+            <!--#endeditable-->
+            <!--#begineditable name="招生问答" viewid="46674" tagname="招生问答" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""--><div class="col-sm-4">
+                <p class="page-header bb1">
+                    招生问答 <small class="text-green text-uppercase">info</small>
+                    <a href="zszn.html" target="_blank" class="pull-right text-grey font14"><span class="icon icon-more"></span> 更多</a>
+                </p>
+                <div class="panel">
+                    <div>
+                        <ul class="list-unstyled list">
+                            <li>
+                                <a href="xwdt.html" title="2017年江汉大学成人高等教育学历教…" target="_blank">2017年江汉大学成人高等教育学历教…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" title="2016年湖北成人高考录取分数线…" target="_blank">2016年湖北成人高考录取分数线…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" title="江汉大学2016年全日制自考特色班招…" target="_blank">江汉大学2016年全日制自考特色班招…</a>
+                            </li>
+                            <li>
+                                <a href="xwdt.html" title="江汉大学自考特色班专业介绍…" target="_blank">江汉大学自考特色班专业介绍…</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script>_showDynClickBatch(['dynclicks_u9_7314','dynclicks_u9_7924','dynclicks_u9_7900','dynclicks_u9_7906','dynclicks_u9_7921','dynclicks_u9_7908','dynclicks_u9_7870','dynclicks_u9_7810'],[7314,7924,7900,7906,7921,7908,7870,7810],"wbnews", 1236753891)</script>
+
+
+
+            <!--#endeditable-->
+        </div>
+         <!--#begineditable name=" 专题专栏" viewid="46675" tagname=" 专题专栏" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""--><div class="row">
+<div class="col-sm-12">
+  <p class="page-header bb1">
+    专题专栏 <small class="text-green text-uppercase">Special column</small>
+    <a href="xwdt.html" target="_blank" class="pull-right text-grey font14"><span class="icon icon-more"></span> 更多</a>
+  </p>
+  <div class="panel">    
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <div class="media">
+          <a href="xwdt.html" target="_blank" title="“江大动态">
+            <img class="media-object" src="img/21D249227E1B3C82DF43B683F8A_917A3C71_56F1.jpg" alt="“江大动态">
+          </a>
+          <div class="media-body">
+            <h5 class="text-center mediatitle"><a href="jdbs.html" target="_blank" title="“江大动态">江大动态</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <div class="media">
+          <a href="zszn.html" target="_blank" title="招生简章">
+            <img class="media-object" src="img/17E0183EDB2407F4BED55CDF9C1_E5A32CD7_7A94.jpg" alt="招生简章">
+          </a>
+          <div class="media-body">
+            <h5 class="text-center mediatitle"><a href="http://postdoc.whu.edu.cn/zp/index.shtml" target="_blank" title="招生简章">招生简章</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <div class="media">
+          <a href="zyjs.html" target="_blank" title="专业介绍">
+            <img class="media-object" src="img/2B0D03AA732A62F5F725B743287_41FE4E02_5771.jpg" alt="专业介绍">
+          </a>
+          <div class="media-body">
+            <h5 class="text-center mediatitle"><a href="zyjs.html" target="_blank" title="专业介绍">专业介绍</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <div class="media">
+          <a href="xxjj.html" target="_blank" title="江汉大学校园风光">
+            <img class="media-object" src="img/516C70CA65026A85E194CE46AE8_954564AD_A5EE.jpg" alt="江汉大学校园风光">
+          </a>
+          <div class="media-body">
+            <h5 class="text-center mediatitle"><a href="xyfg.html" target="_blank" title="江汉大学校园风光">江汉大学校园风光</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+</div><script>_showDynClickBatch(['dynclicks_u10_5776','dynclicks_u10_5365','dynclicks_u10_7057','dynclicks_u10_7221'],[5776,5365,7057,7221],"wbnews", 1236753891)</script>
+<!--#endeditable-->
+
+        </div>
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+          <!--#begineditable name="底部logo" viewid="46677" tagname="底部logo" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""-->             
+          <div class="col-sm-4 col-md-3 col-lg-4 text-center">
+            <p class="mb30"><a href="index.html"><img src="img/logo152.png" alt=""></a></p>
+          </div>
+<!--#endeditable-->
+          <!--#begineditable name="快速通道" viewid="46678" tagname="快速通道" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""--><div class="col-sm-8 col-md-5 col-lg-5">
+  <div class="row">
+    
+   <div class="col-xs-4">
+     <UL class="list-unstyled list">
+            <LI><a href="index.html">网站首页</a></li>
+        <LI><a href="xxjj.html" target="_blank" title="">学校简介</a></li>
+        <LI><a href="xxjj.html" target="_blank" title="">学校概况</a></li>
+        <LI><a href="xxjj.html" target="_blank" title="">江大标识</a></li>
+        <LI><a href="xxjj.html" target="_blank" title="">校园风光</a></li>
+     </UL>
+    </div>
+
+   <div class="col-xs-4">
+     <UL class="list-unstyled list">
+        <LI><a href="zyjs.html" target="_blank" title="" >专业介绍</a></li>
+        <LI><a href="zszn.html" target="_blank" title="">招生指南</a></li>
+        <LI><a href="zszn.html" target="_blank" title="" >招生简章</a></li>
+        <LI><a href="zxbm/zxbm.html.html"target="_blank" title="">在线报名</a></li>
+        <LI><a href="zszn.html" target="_blank"title="">招生问答</a></li>
+     </UL>
+   </div>
+
+   <div class="col-xs-4">
+     <UL class="list-unstyled list">
+        <LI><a href="xwdt.html" target="_blank" title="">新闻动态</a></li>
+        <LI><a href="xwdt.html" target="_blank" title="" >通知公告</a></li>
+        <LI><a href="xwdt.html"target="_blank" title="" >校园动态</a></li>
+        <LI><a href="xwdt.html" target="_blank" title="">专题专栏</a></li>
+        <LI><a href="index.html" target="_blank" title="" >报名查询</a></li>
+     </UL>
+    </div>
+
+  </div>
+</div><!--#endeditable-->
+          <!--#begineditable name="二维码链接" viewid="46679" tagname="二维码链接" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""-->              <div class="col-sm-12 col-md-4 col-lg-3 text-center">
+            <ul class="list-inline pt30">
+              <li class="toggleCode">
+                <p>
+                  <a href="http://newmedia.jhdxedu.com/wechatwelcome" target="_blank">
+                    <span class="icon icon-wechat"></span>
+                  </a>
+                </p>
+                <p>公众号</p>
+                <div class="codeSpan"><img src="img/code-wx.jpg" alt="公众号"></div>
+              </li>
+              <li class="toggleCode">
+                <p>
+                  <a href="http://weibo.com/jianghandaxue" target="_blank">
+                    <span class="icon icon-sina"></span>
+                  </a>
+                </p>
+                <p>官方微信</p>
+                <div class="codeSpan"><img src="img/code-wb.png" alt="官方微信"></div>
+              </li>
+              <li class="toggleCode">
+                <p>
+                  <a href="http://jhdxedu.com/" target="_blank">
+                    <span class="icon icon-app"></span>
+                  </a>
+                </p>
+                <p>QQ咨询</p>
+                <div class="codeSpan"><img src="img/logo.png" alt="QQ咨询"></div>
+              </li>
+              <li class="toggleCode">
+                <p>
+                  <a href="http://jhdxedu.com" target="_blank">
+                    <span class="icon icon-ss"></span>
+                  </a>
+                </p>
+                <p>在线咨询</p>
+                <div class="codeSpan"><img src="ch_template/img/code-yd.png" alt="在线咨询"></div>
+              </li>
+            </ul>
+          </div><!--#endeditable-->
+        </div>
+      </div>
+    </div>
+    <!--#begineditable contype="" name="版权" action="" layout="" clone="0" namechanged="0" order="0" ispublic="0" tagname="版权" viewid="46872" contentviewid="" stylesysid=""--><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+ <NAV class="navbar navbar-default navbar-top footer" role="navigation">
+<DIV class="container">
+<DIV class="row">
+<DIV class="col-sm-12 col-md-8">
+<UL class="nav navbar-nav">
+<LI><A><SPAN class="cp">Copyright 2017- 江汉大学版权所有     地址：武汉经济技术开发区 邮编:430056  电话:84225508<SPAN onclick="window.open('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42010602000219')"></SPAN> </SPAN></A></LI></UL></DIV>
+<DIV class="col-sm-12 col-md-4">
+<UL class="nav navbar-nav navbar-link pull-right">
+<LI><A href="index.html" target="_blank">联系我们 </A></LI>
+<LI><A href="index.html" target="_blank">网站地图 </A></LI>
+<LI><A href="index.html" target="_blank">信息中心 </A></LI></UL></DIV></DIV></DIV></NAV><!--#endeditable-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="ch_template/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="ch_template/js/bootstrap.min.js"></script>
+    <script>
+    // $(".navbar-ex1-collapse").on('click', function(event) {
+    //   event.preventDefault();
+    //   event.stopPropagation();
+    //   $(this).collapse('hide');
+    // });
+    $(".toggleCode").each(function(){
+      var code = $(this).find('.codeSpan');
+      $(this).hover(function() {
+        code.show();
+      }, function() {
+        code.hide();
+      });
+    })
+    $('.navbar-nav > li.dropdown').hover(function (event) {
+        event.preventDefault();
+        $('ul.dropdown-menu', this).stop(true, true).slideDown('fast');
+        $(this).addClass('open');
+        event.stopPropagation();
+    }, function (event) {
+        event.preventDefault();
+        $('ul.dropdown-menu', this).stop(true, true).slideUp('fast');
+        $(this).removeClass('open');
+        event.stopPropagation();
+    });
+    </script>
+
+
+        <!--#begineditable name="轮换图" viewid="46669" tagname="轮换图" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="0" istemp=""-->
+        <script>
+            var sliderSource = [
+                  {
+                      img:"img/2016060702.jpg",
+                      txt:"校园风光",
+                      url:"http://news.jhdxedu.com/info/1002/48906.htm"
+                  },
+              {
+                  img:"img/2017060601.jpg",
+                  txt:"校园风光",
+                  url:"javascript:void(0);"
+              },
+              {
+                  img:"img/2017053002.jpg",
+                  txt:"校园风光",
+                  url:"http://jhdxedu.com/xyfg.html"
+              },
+              {
+                  img:"img/123f.jpg",
+                  txt:"校园风光",
+                  url:"http://news.jhdxedu.com/info/1002/48849.htm"
+              }
+            ];
+
+            var slider = function(options,d){
+                var defaults = {
+                    elmt:"",
+                    pause:4000,
+                    speed:1500
+                }
+                var settings = $.extend(true,{},defaults,options);
+                var timer,_this=this;
+                init();
+                $(window).resize(function(event) {
+                    clearInterval(timer);
+                    cacheDom();
+                    _this.$wrap.css({'margin-left': 0});
+                    render(d);
+                    setSlide();
+                });
+                function init(){
+                    cacheDom();
+                    render(d);
+                    setSlide();
+                    bindEvt();
+                }
+                function cacheDom(){
+                    _this.$slider = $('#'+settings.elmt),
+                    _this.$indicator = _this.$slider.find('.carousel-indicators'),
+                    _this.$wrap = _this.$slider.find('.carousel-inner'),
+                    _this.$item = _this.$wrap.children('.item'),
+                    //_this.$width = _this.$slider.width(),
+                    _this.$width = $('.container').width();
+                    _this.$page = 1;
+                }
+                function render(d){
+                    _this.$wrap.empty();
+                    _this.$indicator.empty();
+                    for (var i = 0; i < d.length; i++) {
+                        var html = '<div class="item">'
+                                    +'  <img src="'+d[i].img+'" alt="...">'
+                                    +'  <div class="carousel-caption">'
+                                    +'    <a href="'+d[i].url+'">'+d[i].txt+'</a>'
+                                    +'  </div>'
+                                    +'</div>';
+                        _this.$wrap.append(html);
+                        var li = '<li></li>';
+                        _this.$indicator.append(li);
+                    };
+                    var fhtml = '<div class="item">'
+                                +'  <img src="'+d[0].img+'" alt="...">'
+                                +'  <div class="carousel-caption">'
+                                +'    <a href="'+d[0].url+'">'+d[0].txt+'</a>'
+                                +'  </div>'
+                                +'</div>';
+                    _this.$wrap.append(fhtml);
+                    _this.$wrap.css('width', _this.$wrap.width()*_this.$wrap.children().length);
+                    _this.$wrap.children('.item').css('width', _this.$width);
+                    _this.$wrap.children('.item').eq(0).show();
+                    _this.$indicator.children().eq(0).addClass('active');
+                }
+                function bindEvt(){
+                    // _this.$wrap.hover(function() {
+                    //   clearInterval(timer);
+                    // }, function() {
+                    //   setSlide();
+                    // });
+                    _this.$indicator.children().on('click', function(event) {
+                        event.preventDefault();
+                        var i = $(this).index();
+                        if (!_this.$wrap.is(':animated')) {
+                            moveTo(i+1);
+                        };
+                    });
+                }
+                function setSlide(){
+                    timer = setInterval(function(){
+                        if (_this.$page<d.length) {
+                            _this.$wrap.animate({'margin-left': -_this.$width*_this.$page}, settings.speed);
+                            _this.$page++;
+                        }else{
+                            _this.$wrap.animate({
+                                'margin-left': -_this.$width*d.length
+                            },
+                              settings.speed, function() {
+                                  _this.$wrap.css({'margin-left': 0});
+                              });
+                            _this.$page=1;
+                        };
+                        _this.$indicator.children().removeClass('active').eq(_this.$page-1).addClass('active');
+                        // console.log(_this.$page);
+                    }, settings.pause);
+                }
+                function moveTo(idx){
+                    clearInterval(timer);
+                    _this.$indicator.children().removeClass('active').eq(idx-1).addClass('active');
+
+                    _this.$wrap.animate({'margin-left': -_this.$width*(idx-1)}, settings.speed, function(){
+                        _this.$page=idx;
+                        setSlide();
+                    });
+                }
+            }
+
+
+            new slider({
+                pause:60000,
+                elmt:"mycarousel"
+            },sliderSource);
+
+
+        </script><!--#endeditable-->
+
+        <script>
+            function hengshuping(){ 
+                if(window.orientation==180||window.orientation==0){ 
+                    window.location.href=window.location.href;
+                } 
+                if(window.orientation==90||window.orientation==-90){ 
+                    window.location.href=window.location.href;       
+                } 
+            }
+
+            if(window.addEventListener){
+                window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+            }else if(window.attachEvent){
+                window.attachEvent("onorientationchange" in window ? "orientationchange" : "resize", hengshuping);
+            }
+
+            //window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+        </script>
+        </metaname>
+</body>
+</html>
