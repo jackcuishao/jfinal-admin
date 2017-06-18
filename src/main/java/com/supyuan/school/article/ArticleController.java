@@ -21,7 +21,7 @@ import java.util.Map;
  */
 @ControllerBind(controllerKey = "/Article")
 public class ArticleController extends BaseProjectController {
-    private static final String path = "/pages/school/Article/";
+    private static final String path = "/pages/school/article/";
 
     public void index() {
         list();
