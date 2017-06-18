@@ -21,11 +21,11 @@ import java.util.Map;
 /**
  * adminController
  */
-@ControllerBind(controllerKey = "/")
+@ControllerBind(controllerKey = "/admin")
 public class AdminController extends BaseProjectController {
 
 	public static final String loginPage = "/pages/admin/login.html";
-	public static final String homePage = "/home";
+	public static final String homePage = "/admin/home";
 	private static final String home_path = "/pages/admin/home/";
 
 	public void index() {

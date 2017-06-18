@@ -46,13 +46,13 @@
 		};
 		
 		$('[name="password"]').val(hex_md5(pwd));
-		form1.action = "${ctx!}login";
+		form1.action = "/admin/login";
 		form1.submit();
 		// submit_js("login_login.action", "loginform");
 	}
 	
 	function loadPicimageCode() {
-		document.getElementById("picimageCode").src = '${BASE_PATH }image_code?ran=' + Math.random();
+		document.getElementById("picimageCode").src = '/admin/image_code?ran=' + Math.random();
 	}
 	
 	<!-- jQuery 当键盘敲击【ENTER】键时，系统登录 -->
@@ -109,7 +109,7 @@ body {
 					<div class="input-group-addon" style="">
 			     			<img id="picimageCode"  width="60" height="26"  
 			     				 style="line-height: 50px;height: 40px;margin-left: 10px; cursor:pointer;"
-				 			 src="${BASE_PATH }image_code" title="更换一张验证码图片" onclick="loadPicimageCode()"/>
+				 			 src="/admin/image_code" title="更换一张验证码图片" onclick="loadPicimageCode()"/>
 			     	</div>
 				</div>
 			
