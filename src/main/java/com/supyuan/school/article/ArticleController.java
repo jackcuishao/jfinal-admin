@@ -30,7 +30,8 @@ public class ArticleController extends BaseProjectController {
     public void list() {
         Article model = getModelByAttr(Article.class);
 
-        SQLUtils sql = new SQLUtils(" from article t left join  sys_user u on t.createUser = u.userid left join article_class ac on ac.id = t.class_id"
+        SQLUtils sql = new SQLUtils(" from article t left join  sys_user u on t.createUser = u.userid " +
+                "left join article_class ac on ac.id = t.class_id"
                 + " where 1=1 ");
         if (model.getAttrValues().length != 0) {
             sql.setAlias("t");

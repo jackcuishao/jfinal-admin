@@ -45,6 +45,12 @@ var bodyContent = {
             </select>
             </td>
         </tr>
+        <tr>
+            <td>简要介绍</td>
+            <td colspan="5">
+                <input class="form-control" type="text" name="model.short_title" value="${model.short_title }"    />
+            </td>
+        </tr>
 
         <tr>
             <td colspan="6">
@@ -63,7 +69,7 @@ var bodyContent = {
         </td>
         <td>浏览次数</td>
         <td>
-            <input class="form-control" type="text" name="model.cat_count" value="${model.cat_count }"  valid='vtext' validname='文章浏览次数'  />
+            <input class="form-control" type="text" name="model.cat_count" value="${model.cat_count }"  />
         </td>
 
         <td>缩略图</td>
